@@ -1,50 +1,20 @@
-/* style.css */
-
-* {
+body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  background: #fff;
-  color: #000;
-  font-family: 'Courier New', monospace;
-  font-size: 16px;
-  line-height: 1.6;
-  padding: 2rem;
-}
-
-main {
-  max-width: 600px;
-  margin: 5rem auto;
-  text-align: left;
-}
-
-h1 {
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
-}
-
-.tagline {
-  font-style: italic;
-  margin-bottom: 2rem;
-  color: #666;
-}
-
-nav {
+  background: linear-gradient(to bottom right, #f6faff, #e3efff);
+  font-family: monospace;
+  color: #111;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
 }
-
 a {
-  color: #000;
-  text-decoration: underline;
-  font-weight: bold;
+  color: #0044cc;
+  text-decoration: none;
+  border-bottom: 1px dashed #0044cc;
 }
-
 a:hover {
-  background: yellow;
-  color: black;
+  background-color: #d9ecff;
 }
