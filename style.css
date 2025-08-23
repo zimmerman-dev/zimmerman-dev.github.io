@@ -1,66 +1,87 @@
+/* ---------- GLOBAL RESET ---------- */
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
+/* ---------- BODY ---------- */
 body {
-  font-family: monospace;
-  background-color: #00000B;
-  color: #c0caf5;
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  background-color: #0f111a;
+  color: #e4e6eb;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  padding: 1rem;
+}
+
+/* ---------- CONTAINER ---------- */
+.container {
+  max-width: 480px;
+  width: 100%;
+}
+
+/* ---------- PROFILE CARD ---------- */
+.profile-card {
+  background: rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   padding: 2rem;
+  border-radius: 16px;
   text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.profile-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
 }
 
-img {
-  max-width: 100%;
-  width: 200px;
-  height: auto;
-  border-radius: 15px;
-  margin-bottom: 1.5rem;
-  display: block;
+/* ---------- PROFILE IMAGE ---------- */
+.profile-img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid rgba(255, 255, 255, 0.2);
+  margin-bottom: 1rem;
 }
 
-h1 {
-  color: #7aa2f7;
-  margin-bottom: 0.5rem;
+/* ---------- NAME & TAGLINE ---------- */
+.name {
+  font-size: 1.8rem;
+  margin-bottom: 0.4rem;
+  color: #ffffff;
 }
 
 .tagline {
-  color: #9ece6a;
-  margin-bottom: 2rem;
+  font-size: 1rem;
+  color: #9aa0b8;
+  margin-bottom: 1.5rem;
 }
 
-nav {
+/* ---------- LINKS ---------- */
+.links {
   display: flex;
+  justify-content: center;
   gap: 1rem;
   flex-wrap: wrap;
-  justify-content: center;
 }
 
-nav a {
-  color: #7dcfff;
+.links a {
   text-decoration: none;
-  border: 1px dashed #414868;
-  border-radius: 0.5rem;
-  background-color: #24283b;
+  color: #ffffff;
   padding: 0.5rem 1rem;
-  transition: background 0.2s ease, color 0.2s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  transition: background 0.2s ease, transform 0.2s ease;
 }
 
-nav a:hover {
-  background-color: #1a1b26;
-  color: #9ece6a;
+.links a:hover {
+  background: rgba(255, 255, 255, 0.08);
+  transform: scale(1.05);
 }
 
